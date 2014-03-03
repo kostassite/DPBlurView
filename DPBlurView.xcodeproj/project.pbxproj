@@ -19,6 +19,9 @@
 		2ED34EE318C4B73B0099B145 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ED34ECB18C4B73B0099B145 /* UIKit.framework */; };
 		2ED34EEB18C4B73B0099B145 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2ED34EE918C4B73B0099B145 /* InfoPlist.strings */; };
 		2ED34EED18C4B73B0099B145 /* DPBlurViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED34EEC18C4B73B0099B145 /* DPBlurViewTests.m */; };
+		2ED34EFB18C4B96F0099B145 /* UIImage+StackBlur.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED34EF818C4B96F0099B145 /* UIImage+StackBlur.m */; };
+		2ED34EFC18C4B96F0099B145 /* UIView+CaptureImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED34EFA18C4B96F0099B145 /* UIView+CaptureImage.m */; };
+		2ED34EFF18C4B9810099B145 /* DPBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED34EFE18C4B9810099B145 /* DPBlurView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,12 @@
 		2ED34EE818C4B73B0099B145 /* DPBlurViewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DPBlurViewTests-Info.plist"; sourceTree = "<group>"; };
 		2ED34EEA18C4B73B0099B145 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2ED34EEC18C4B73B0099B145 /* DPBlurViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPBlurViewTests.m; sourceTree = "<group>"; };
+		2ED34EF718C4B96F0099B145 /* UIImage+StackBlur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+StackBlur.h"; sourceTree = "<group>"; };
+		2ED34EF818C4B96F0099B145 /* UIImage+StackBlur.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+StackBlur.m"; sourceTree = "<group>"; };
+		2ED34EF918C4B96F0099B145 /* UIView+CaptureImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CaptureImage.h"; sourceTree = "<group>"; };
+		2ED34EFA18C4B96F0099B145 /* UIView+CaptureImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CaptureImage.m"; sourceTree = "<group>"; };
+		2ED34EFD18C4B9810099B145 /* DPBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPBlurView.h; sourceTree = "<group>"; };
+		2ED34EFE18C4B9810099B145 /* DPBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPBlurView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +118,7 @@
 			children = (
 				2ED34ED618C4B73B0099B145 /* AppDelegate.h */,
 				2ED34ED718C4B73B0099B145 /* AppDelegate.m */,
+				2ED34EF618C4B7500099B145 /* DPBlurView */,
 				2ED34ED918C4B73B0099B145 /* Images.xcassets */,
 				2ED34ECE18C4B73B0099B145 /* Supporting Files */,
 			);
@@ -142,6 +152,19 @@
 				2ED34EE918C4B73B0099B145 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2ED34EF618C4B7500099B145 /* DPBlurView */ = {
+			isa = PBXGroup;
+			children = (
+				2ED34EF718C4B96F0099B145 /* UIImage+StackBlur.h */,
+				2ED34EF818C4B96F0099B145 /* UIImage+StackBlur.m */,
+				2ED34EF918C4B96F0099B145 /* UIView+CaptureImage.h */,
+				2ED34EFA18C4B96F0099B145 /* UIView+CaptureImage.m */,
+				2ED34EFD18C4B9810099B145 /* DPBlurView.h */,
+				2ED34EFE18C4B9810099B145 /* DPBlurView.m */,
+			);
+			path = DPBlurView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,8 +262,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2ED34EFB18C4B96F0099B145 /* UIImage+StackBlur.m in Sources */,
 				2ED34ED818C4B73B0099B145 /* AppDelegate.m in Sources */,
 				2ED34ED418C4B73B0099B145 /* main.m in Sources */,
+				2ED34EFC18C4B96F0099B145 /* UIView+CaptureImage.m in Sources */,
+				2ED34EFF18C4B9810099B145 /* DPBlurView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
